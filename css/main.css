@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url("normalize.css");
 @import url("grid.css");
 @import url("modal.css");
@@ -53,7 +53,7 @@ button {
 	font-size: 22px;
 	font-size: 1rem;
 	line-height: 1.36;
-	color: #86888b;
+	color: #ffce3d;
 	letter-spacing: -0.035em;
 }
 
@@ -66,7 +66,7 @@ h3,
 h4,
 .h4 {
 	margin: 0;
-	color: #2a2a2a;
+	color: #ffce3d;
 }
 
 h1,
@@ -150,6 +150,9 @@ h4,
 h4,
 .h4 {
 	font-size: 14px;
+}
+i {
+	color: #ffce3d;
 }
 
 @media ( min-width: 768px ) {
@@ -882,22 +885,82 @@ input[type=text] {
 /* Set a style for all buttons */
 button.signup {
     background-color: #4CAF50;
+    border-radius: 25px;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 40%;
+	-webkit-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+button.signup:hover {
+    background-color: #ffbf00;
+    border-radius: 25px;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+	-webkit-transform: rotate(-360deg);
+	-moz-transform: rotate(-360deg);
+	-o-transform: rotate(-360deg);
+	transform: rotate(-360deg);
+}
+@-moz-keyframes rotate {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
 }
 
+@-webkit-keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+@-o-keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+@keyframes rotate {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+/*Modal Cancel and Signup Button design to cancel hover affect*/
+.guydup {
+    background-color: #4CAF50;
+    border-radius: 25px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+/*.guydup:hover {
+    background-color: #4CAF50;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #3d803f;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 40%;
+ }*/
+
 /* Extra styles for the cancel button */
-.cancelbtn.signup {
+.cancelbtn.guydup {
     padding: 14px 20px;
     background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {
+div.cancelbtn,div.signupbtn {
     float: left;
     width: 50%;
 }
@@ -1698,7 +1761,7 @@ button.signup {
 
 
 .share-group .icon {
-	
+	color: #ffce3d;
 }
 
 /* downloads */
@@ -2061,15 +2124,18 @@ label {
 	width: 80px;
 	height: 80px;
 	line-height: 78px;
-	border: 1px solid #e5e5e5;
+	border: 1px solid #ffce3d;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: 40% auto;
 	margin: 20px 0 15px;
 	font-style: normal;
-	color: #1b1b1b;
+	color: #ffce3d;
 	text-align: center;
 	overflow: hidden;
+}
+.gold {
+	color: #ffce3d;
 }
 
 .icon-no-border {
@@ -2089,12 +2155,14 @@ label {
 	right: 0;
 	margin: auto;
 	max-width: 85%;
+	color: #ffce3d;
 }
 
 .icon-no-border img,
 .icon .right,
 .icon .bottom {
 	max-width: 100%;
+	color: #ffce3d;
 }
 
 .icon img.right {
@@ -2114,11 +2182,13 @@ label {
 
 	.icon {
 		margin-top: 0;
+		color: #ffce3d;
 	}
 	
 	.has-icon {
 		position: relative;
 		padding-left: 110px;
+		color: #ffce3d;
 	}
 	
 	.has-icon .icon {
@@ -2126,6 +2196,7 @@ label {
 		top: 0;
 		left: 0;
 		margin-top: 0;
+		color: #ffce3d;
 	}
 
 }
@@ -2137,6 +2208,7 @@ label {
 		height: 50px;
 		line-height: 48px;
 		padding-bottom: 0;
+		color: #ffce3d;
 	}
 	
 	.has-icon {
@@ -2152,6 +2224,7 @@ label {
 		height: 60px;
 		line-height: 60px;
 		padding-bottom: 0;
+		color: #ffce3d;
 	}
 	
 	.has-icon {
@@ -2163,12 +2236,16 @@ label {
 
 	.icon {
 		background-size: auto;
+		color: #ffce3d;
 	}
 	
 	.has-icon {
 		padding-left: 107px;
 	}
 
+}
+body div i {
+	color: #ffce3d;
 }
 
 .icon-share {
